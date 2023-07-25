@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: pip-e2e-test-bg0m
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: pip-e2e-test-bg0m
+    app.kubernetes.io/part-of: test-app-omyb
+  name: pip-e2e-test-bg0m
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: pip-e2e-test-bg0m
+status:
+  loadBalancer: {}
