@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-no-dockerfile-nums
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/susdas_quay_org/build-e2e-wout-tenant/test-app-omyb/nodejs-no-dockerfile-nums@sha256:53a8cb97808252ef93e1e3cdf6194e04149f09023ef474a400b6ef64cf15753c
         name: my-nodejs
         ports:
         - containerPort: 3001
